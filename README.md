@@ -15,6 +15,9 @@ Vue Builder App is a work in progress form-builder project using Vue 3 + Vite. T
    ```
 
 Visit the local address printed in the terminal to view the app.
+## Tailwind CSS
+Tailwind is set up using PostCSS. Customize `tailwind.config.js` or add styles in `src/assets/main.css`.
+
 
 ## Planned Features
 
