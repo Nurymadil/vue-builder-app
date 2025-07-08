@@ -7,15 +7,18 @@ Vue Builder App is a work in progress form-builder project using Vue 3 + Vite. T
 
 1. Install dependencies:
    ```bash
-   npm install
-   npm install primevue primeicons
+   pnpm install
    ```
+   PrimeVue and PrimeIcons are already listed as dependencies, so no additional installation steps are required.
 2. Start the development server:
    ```bash
-   npm run dev
+   pnpm dev
    ```
 
 Visit the local address printed in the terminal to view the app.
+## Tailwind CSS
+Tailwind is set up using PostCSS. Customize `tailwind.config.js` or add styles in `src/assets/main.css`.
+
 
 ## Planned Features
 
@@ -50,8 +53,8 @@ import Dialog from 'primevue/dialog'
 Formatting and linting are enforced with Prettier and ESLint. Before committing changes run:
 
 ```bash
-npm run lint
-npm run format
+pnpm lint
+pnpm format
 ```
 
 This will automatically fix ESLint issues and apply the repository's Prettier configuration.
@@ -61,7 +64,7 @@ This will automatically fix ESLint issues and apply the repository's Prettier co
 Contributions are welcome! To propose a change:
 
 1. Fork the repository and create a new branch for your feature or fix.
-2. Make sure `npm run lint` and `npm run format` pass.
+2. Make sure `pnpm lint` and `pnpm format` pass.
 3. Open a pull request explaining your changes.
 
 Please keep pull requests focused and add tests if applicable.
@@ -71,8 +74,8 @@ Please keep pull requests focused and add tests if applicable.
 Run the unit test suite with:
 
 ```bash
-npm install
-npm test
+pnpm install
+pnpm test
 ```
 
 The tests are powered by [Vitest](https://vitest.dev/).
