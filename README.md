@@ -44,3 +44,14 @@ Contributions are welcome! To propose a change:
 3. Open a pull request explaining your changes.
 
 Please keep pull requests focused and add tests if applicable.
+
+## Testing
+
+Run the unit test suite with:
+
+```bash
+npm install
+npm test
+```
+
+The tests are powered by [Vitest](https://vitest.dev/).
