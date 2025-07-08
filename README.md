@@ -8,6 +8,7 @@ Vue Builder App is a work in progress form-builder project using Vue 3 + Vite. T
 1. Install dependencies:
    ```bash
    npm install
+   npm install primevue primeicons
    ```
 2. Start the development server:
    ```bash
@@ -26,6 +27,26 @@ Tailwind is set up using PostCSS. Customize `tailwind.config.js` or add styles i
 - **Component library integration.** Build inputs, selects and other form controls from reusable components.
 
 These features are under active development and may change.
+
+## PrimeVue Integration
+
+This project uses [PrimeVue](https://primevue.org/) for UI components. PrimeVue
+and PrimeIcons are installed as dependencies. Global configuration is applied in
+`src/main.ts`.
+
+Example components are imported in the builder modules:
+
+```vue
+<script setup lang="ts">
+import Button from 'primevue/button'
+import Dialog from 'primevue/dialog'
+</script>
+
+<template>
+  <Button label="Open" @click="visible = true" />
+  <Dialog v-model:visible="visible" header="PrimeVue Dialog">Content</Dialog>
+</template>
+```
 
 ## Development
 
@@ -47,3 +68,14 @@ Contributions are welcome! To propose a change:
 3. Open a pull request explaining your changes.
 
 Please keep pull requests focused and add tests if applicable.
+
+## Testing
+
+Run the unit test suite with:
+
+```bash
+npm install
+npm test
+```
+
+The tests are powered by [Vitest](https://vitest.dev/).

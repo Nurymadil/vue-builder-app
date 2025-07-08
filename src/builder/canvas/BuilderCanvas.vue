@@ -1,5 +1,10 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import Button from 'primevue/button'
+import Dialog from 'primevue/dialog'
 import { TextField, Checkbox } from '../entities'
+
+const showDialog = ref(false)
 </script>
 
 <template>
@@ -8,6 +13,10 @@ import { TextField, Checkbox } from '../entities'
     <div class="components">
       <TextField />
       <Checkbox />
+      <Button label="Open" @click="showDialog = true" />
+      <Dialog v-model:visible="showDialog" modal header="PrimeVue Dialog">
+        Dialog content goes here.
+      </Dialog>
     </div>
   </div>
 </template>
