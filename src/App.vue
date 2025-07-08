@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import { BuilderCanvas, InspectorPanel } from './builder'
 </script>
 
 <template>
@@ -14,6 +15,10 @@ import TheWelcome from './components/TheWelcome.vue'
 
   <main>
     <TheWelcome />
+    <div class="builder">
+      <BuilderCanvas />
+      <InspectorPanel />
+    </div>
   </main>
 </template>
 
@@ -25,6 +30,12 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+
+.builder {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 1024px) {
