@@ -1,9 +1,10 @@
 <script setup lang="ts">
+import Checkbox from 'primevue/checkbox'
 </script>
 
 <template>
   <label class="checkbox">
-    <input type="checkbox" />
+    <Checkbox binary />
     Checkbox
   </label>
 </template>
