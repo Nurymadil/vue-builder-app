@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import InputText from 'primevue/inputtext'
 </script>
 
 <template>
-  <input class="text-field" type="text" placeholder="Text Field" />
+  <InputText class="text-field" type="text" placeholder="Text Field" />
 </template>
 
 <style scoped>

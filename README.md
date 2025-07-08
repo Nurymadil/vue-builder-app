@@ -8,6 +8,7 @@ Vue Builder App is a work in progress form-builder project using Vue 3 + Vite. T
 1. Install dependencies:
    ```bash
    npm install
+   npm install primevue primeicons
    ```
 2. Start the development server:
    ```bash
@@ -23,6 +24,26 @@ Visit the local address printed in the terminal to view the app.
 - **Component library integration.** Build inputs, selects and other form controls from reusable components.
 
 These features are under active development and may change.
+
+## PrimeVue Integration
+
+This project uses [PrimeVue](https://primevue.org/) for UI components. PrimeVue
+and PrimeIcons are installed as dependencies. Global configuration is applied in
+`src/main.ts`.
+
+Example components are imported in the builder modules:
+
+```vue
+<script setup lang="ts">
+import Button from 'primevue/button'
+import Dialog from 'primevue/dialog'
+</script>
+
+<template>
+  <Button label="Open" @click="visible = true" />
+  <Dialog v-model:visible="visible" header="PrimeVue Dialog">Content</Dialog>
+</template>
+```
 
 ## Development
 
