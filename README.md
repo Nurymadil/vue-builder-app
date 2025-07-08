@@ -9,6 +9,7 @@ Vue Builder App is a work in progress form-builder project using Vue 3 + Vite. T
    ```bash
    pnpm install
    ```
+   PrimeVue and PrimeIcons are already listed as dependencies, so no additional installation steps are required.
 2. Start the development server:
    ```bash
    pnpm dev
