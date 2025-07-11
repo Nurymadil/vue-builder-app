@@ -1,0 +1,16 @@
+{
+  "name": "@form-builder/runtime",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

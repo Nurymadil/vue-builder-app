@@ -1,0 +1,20 @@
+{
+  "name": "@form-builder/builder",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "pinia": "^2.3.1",
+    "vue": "^3.5.17",
+    "vue-draggable-next": "^2.2.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "vite": "^5.4.19",
+    "vue-tsc": "^2.2.12"
+  }
+}
