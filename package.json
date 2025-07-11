@@ -1,47 +1,30 @@
 {
-  "name": "builder-app",
-  "version": "0.0.0",
+  "name": "form-builder",
   "private": true,
-  "type": "module",
+  "packageManager": "pnpm@9.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix",
-    "format": "prettier --write src/",
-    "test": "vitest"
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "eslint . --ext .vue,.ts",
+    "release": "semantic-release",
+    "prepare": "husky install"
   },
-  "dependencies": {
-    "pinia": "^3.0.3",
-    "primeicons": "^7.0.0",
-    "primevue": "^4.3.6",
-    "vue": "^3.5.17",
-    "vue-i18n": "^9.14.4"
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "@tsconfig/node22": "^22.0.2",
-    "@types/node": "^22.15.32",
-    "@vitejs/plugin-vue": "^6.0.0",
-    "@vue/eslint-config-prettier": "^10.2.0",
-    "@vue/eslint-config-typescript": "^14.5.1",
-    "@vue/test-utils": "^2.4.6",
-    "@vue/tsconfig": "^0.7.0",
-    "autoprefixer": "^10.4.21",
-    "eslint": "^9.29.0",
-    "eslint-plugin-vue": "~10.2.0",
-    "jiti": "^2.4.2",
-    "jsdom": "^26.1.0",
-    "npm-run-all2": "^8.0.4",
-    "postcss": "^8.5.6",
-    "prettier": "3.5.3",
-    "tailwindcss": "^3.4.4",
-    "typescript": "~5.8.0",
-    "vite": "^7.0.0",
-    "vite-plugin-vue-devtools": "^7.7.7",
-    "vitest": "^3.2.4",
-    "vue-tsc": "^2.2.10"
-  },
-  "license": "MIT"
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@types/node": "^24.0.12",
+    "eslint": "^9.30.1",
+    "eslint-plugin-vue": "^10.3.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2",
+    "semantic-release": "^24.2.6",
+    "tailwindcss": "^4.1.11",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
 }

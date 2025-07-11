@@ -1,0 +1,6 @@
+{
+  "name": "@form-builder/docs",
+  "private": true,
+  "scripts": { "dev": "vitepress dev src", "build": "vitepress build src" },
+  "dependencies": { "vitepress": "^1.2.0" }
+}
